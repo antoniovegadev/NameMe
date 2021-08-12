@@ -8,9 +8,57 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var inputImage: UIImage?
+    @State private var showingImagePicker = false
+    @State private var showingAddPerson = false
+    @State private var addPerson: AddPerson?
+    
+    @ObservedObject var people = People()
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            GeometryReader { geo in
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 50) {
+                        ForEach(people.items.sorted()) { person in
+                            NavigationLink(destination: person.image.resizable().scaledToFit()) {
+                                VStack {
+                                    CircleImage(image: person.image)
+                                        .padding()
+                                    
+                                    Text(person.name)
+                                }
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                        }
+                    }
+                }
+                .padding(20)
+            }
+            .navigationTitle("NameMe")
+            .navigationBarItems(trailing: Button(action: {
+                showingImagePicker = true
+            }) {
+                Image(systemName: "plus")
+            })
+        }
+        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+            ImagePicker(image: $inputImage)
+        }
+        .sheet(isPresented: $showingAddPerson) {
+            addPerson
+        }
+    }
+    
+    func loadImage() {
+        guard let inputImage = self.inputImage else { return }
+        addPerson = AddPerson(uiimage: inputImage, people: people)
+        showingAddPerson = true
     }
 }
 

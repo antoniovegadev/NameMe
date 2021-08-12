@@ -11,6 +11,10 @@
 		E203081226C57E81000084FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203081126C57E81000084FC /* ContentView.swift */; };
 		E203081426C57E83000084FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E203081326C57E83000084FC /* Assets.xcassets */; };
 		E203081726C57E83000084FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E203081626C57E83000084FC /* Preview Assets.xcassets */; };
+		E203081F26C57F10000084FC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203081E26C57F10000084FC /* ImagePicker.swift */; };
+		E203082126C59AED000084FC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082026C59AED000084FC /* Person.swift */; };
+		E203082326C59D35000084FC /* AddPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082226C59D35000084FC /* AddPerson.swift */; };
+		E203082726C5CD09000084FC /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082626C5CD09000084FC /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		E203081326C57E83000084FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E203081626C57E83000084FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E203081826C57E83000084FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E203081E26C57F10000084FC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E203082026C59AED000084FC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E203082226C59D35000084FC /* AddPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPerson.swift; sourceTree = "<group>"; };
+		E203082626C5CD09000084FC /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 			children = (
 				E203080F26C57E81000084FC /* NameMeApp.swift */,
 				E203081126C57E81000084FC /* ContentView.swift */,
+				E203082226C59D35000084FC /* AddPerson.swift */,
+				E203082626C5CD09000084FC /* CircleImage.swift */,
+				E203082026C59AED000084FC /* Person.swift */,
+				E203081E26C57F10000084FC /* ImagePicker.swift */,
 				E203081326C57E83000084FC /* Assets.xcassets */,
 				E203081826C57E83000084FC /* Info.plist */,
 				E203081526C57E83000084FC /* Preview Content */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E203082326C59D35000084FC /* AddPerson.swift in Sources */,
+				E203081F26C57F10000084FC /* ImagePicker.swift in Sources */,
 				E203081226C57E81000084FC /* ContentView.swift in Sources */,
+				E203082126C59AED000084FC /* Person.swift in Sources */,
 				E203081026C57E81000084FC /* NameMeApp.swift in Sources */,
+				E203082726C5CD09000084FC /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
