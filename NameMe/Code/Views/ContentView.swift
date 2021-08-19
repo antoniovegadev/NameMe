@@ -8,11 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var inputImage: UIImage?
-    @State private var showingImagePicker = false
     @State private var showingAddPerson = false
-    @State private var addPerson: AddPersonView?
-    
     @ObservedObject var people = People()
     
     let columns = [
@@ -42,23 +38,14 @@ struct ContentView: View {
             }
             .navigationTitle("NameMe")
             .navigationBarItems(trailing: Button(action: {
-                showingImagePicker = true
+                showingAddPerson = true
             }) {
                 Image(systemName: "plus")
             })
         }
-        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-            ImagePicker(image: $inputImage)
-        }
         .sheet(isPresented: $showingAddPerson) {
-            addPerson
+            AddPersonView(people: people)
         }
-    }
-    
-    func loadImage() {
-        guard let inputImage = self.inputImage else { return }
-        addPerson = AddPersonView(uiimage: inputImage, people: people)
-        showingAddPerson = true
     }
 }
 

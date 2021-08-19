@@ -15,6 +15,7 @@
 		E203082126C59AED000084FC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082026C59AED000084FC /* Person.swift */; };
 		E203082326C59D35000084FC /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082226C59D35000084FC /* AddPersonView.swift */; };
 		E203082726C5CD09000084FC /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082626C5CD09000084FC /* CircleImageView.swift */; };
+		E22D142726CEF5E600645D5D /* EmptyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22D142626CEF5E600645D5D /* EmptyImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E203082026C59AED000084FC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E203082226C59D35000084FC /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
 		E203082626C5CD09000084FC /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		E22D142626CEF5E600645D5D /* EmptyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				E203081126C57E81000084FC /* ContentView.swift */,
 				E203082226C59D35000084FC /* AddPersonView.swift */,
 				E203082626C5CD09000084FC /* CircleImageView.swift */,
+				E22D142626CEF5E600645D5D /* EmptyImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				E203082326C59D35000084FC /* AddPersonView.swift in Sources */,
 				E203081F26C57F10000084FC /* ImagePicker.swift in Sources */,
 				E203081226C57E81000084FC /* ContentView.swift in Sources */,
+				E22D142726CEF5E600645D5D /* EmptyImageView.swift in Sources */,
 				E203082126C59AED000084FC /* Person.swift in Sources */,
 				E203081026C57E81000084FC /* NameMeApp.swift in Sources */,
 				E203082726C5CD09000084FC /* CircleImageView.swift in Sources */,
