@@ -1,5 +1,5 @@
 //
-//  CircleImage.swift
+//  CircleImageView.swift
 //  NameMe
 //
 //  Created by Antonio Vega on 8/12/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CircleImage: View {
+struct CircleImageView: View {
     var image: Image
     
     var body: some View {
@@ -21,6 +21,6 @@ struct CircleImage: View {
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage(image: Image("example"))
+        CircleImageView(image: Image("example"))
     }
 }

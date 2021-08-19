@@ -13,8 +13,8 @@
 		E203081726C57E83000084FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E203081626C57E83000084FC /* Preview Assets.xcassets */; };
 		E203081F26C57F10000084FC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203081E26C57F10000084FC /* ImagePicker.swift */; };
 		E203082126C59AED000084FC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082026C59AED000084FC /* Person.swift */; };
-		E203082326C59D35000084FC /* AddPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082226C59D35000084FC /* AddPerson.swift */; };
-		E203082726C5CD09000084FC /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082626C5CD09000084FC /* CircleImage.swift */; };
+		E203082326C59D35000084FC /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082226C59D35000084FC /* AddPersonView.swift */; };
+		E203082726C5CD09000084FC /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203082626C5CD09000084FC /* CircleImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		E203081826C57E83000084FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E203081E26C57F10000084FC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E203082026C59AED000084FC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		E203082226C59D35000084FC /* AddPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPerson.swift; sourceTree = "<group>"; };
-		E203082626C5CD09000084FC /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		E203082226C59D35000084FC /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
+		E203082626C5CD09000084FC /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +60,8 @@
 		E203080E26C57E81000084FC /* NameMe */ = {
 			isa = PBXGroup;
 			children = (
-				E203080F26C57E81000084FC /* NameMeApp.swift */,
-				E203081126C57E81000084FC /* ContentView.swift */,
-				E203082226C59D35000084FC /* AddPerson.swift */,
-				E203082626C5CD09000084FC /* CircleImage.swift */,
-				E203082026C59AED000084FC /* Person.swift */,
-				E203081E26C57F10000084FC /* ImagePicker.swift */,
-				E203081326C57E83000084FC /* Assets.xcassets */,
-				E203081826C57E83000084FC /* Info.plist */,
-				E203081526C57E83000084FC /* Preview Content */,
+				E22D142326CED3BB00645D5D /* Code */,
+				E22D142226CED3B000645D5D /* Resources */,
 			);
 			path = NameMe;
 			sourceTree = "<group>";
@@ -79,6 +72,45 @@
 				E203081626C57E83000084FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E22D142226CED3B000645D5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E203081326C57E83000084FC /* Assets.xcassets */,
+				E203081826C57E83000084FC /* Info.plist */,
+				E203081526C57E83000084FC /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E22D142326CED3BB00645D5D /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				E203080F26C57E81000084FC /* NameMeApp.swift */,
+				E203081E26C57F10000084FC /* ImagePicker.swift */,
+				E22D142526CED43B00645D5D /* Model */,
+				E22D142426CED3EE00645D5D /* Views */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		E22D142426CED3EE00645D5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E203081126C57E81000084FC /* ContentView.swift */,
+				E203082226C59D35000084FC /* AddPersonView.swift */,
+				E203082626C5CD09000084FC /* CircleImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E22D142526CED43B00645D5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E203082026C59AED000084FC /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,12 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E203082326C59D35000084FC /* AddPerson.swift in Sources */,
+				E203082326C59D35000084FC /* AddPersonView.swift in Sources */,
 				E203081F26C57F10000084FC /* ImagePicker.swift in Sources */,
 				E203081226C57E81000084FC /* ContentView.swift in Sources */,
 				E203082126C59AED000084FC /* Person.swift in Sources */,
 				E203081026C57E81000084FC /* NameMeApp.swift in Sources */,
-				E203082726C5CD09000084FC /* CircleImage.swift in Sources */,
+				E203082726C5CD09000084FC /* CircleImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +316,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NameMe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NameMe/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = C7X77XQ2L3;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = NameMe/Info.plist;
+				INFOPLIST_FILE = NameMe/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,10 +338,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NameMe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NameMe/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = C7X77XQ2L3;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = NameMe/Info.plist;
+				INFOPLIST_FILE = NameMe/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

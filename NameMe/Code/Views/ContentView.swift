@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var inputImage: UIImage?
     @State private var showingImagePicker = false
     @State private var showingAddPerson = false
-    @State private var addPerson: AddPerson?
+    @State private var addPerson: AddPersonView?
     
     @ObservedObject var people = People()
     
@@ -28,7 +28,7 @@ struct ContentView: View {
                         ForEach(people.items.sorted()) { person in
                             NavigationLink(destination: person.image.resizable().scaledToFit()) {
                                 VStack {
-                                    CircleImage(image: person.image)
+                                    CircleImageView(image: person.image)
                                         .padding()
                                     
                                     Text(person.name)
@@ -57,7 +57,7 @@ struct ContentView: View {
     
     func loadImage() {
         guard let inputImage = self.inputImage else { return }
-        addPerson = AddPerson(uiimage: inputImage, people: people)
+        addPerson = AddPersonView(uiimage: inputImage, people: people)
         showingAddPerson = true
     }
 }

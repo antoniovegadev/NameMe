@@ -1,5 +1,5 @@
 //
-//  AddPerson.swift
+//  AddPersonView.swift
 //  NameMe
 //
 //  Created by Antonio Vega on 8/12/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddPerson: View {
+struct AddPersonView: View {
     var uiimage: UIImage
     @State private var name = ""
     @ObservedObject var people: People
@@ -19,7 +19,7 @@ struct AddPerson: View {
                 VStack {
                     Spacer()
                     
-                    CircleImage(image: Image(uiImage: uiimage))
+                    CircleImageView(image: Image(uiImage: uiimage))
                         .frame(width: geo.size.width * 0.4, height: geo.size.width * 0.4)
                     
                     Form {
@@ -54,6 +54,6 @@ struct AddPerson: View {
 
 struct AddPerson_Previews: PreviewProvider {
     static var previews: some View {
-        AddPerson(uiimage: UIImage(systemName: "person.crop.circle")!, people: People())
+        AddPersonView(uiimage: UIImage(systemName: "person.crop.circle")!, people: People())
     }
 }
