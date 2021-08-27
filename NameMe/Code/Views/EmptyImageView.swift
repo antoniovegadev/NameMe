@@ -13,12 +13,13 @@ struct EmptyImageView: View {
     var body: some View {
         ZStack {
             Circle()
-                .foregroundColor(.gray)
+                .foregroundColor(.secondary)
                 .opacity(0.5)
             
             Text("Add Image")
-                .font(.title2)
+                .font(.title3)
                 .foregroundColor(.white)
+                .opacity(0.8)
         }
         .frame(width: width, height: width)
     }

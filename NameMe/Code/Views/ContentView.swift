@@ -22,7 +22,7 @@ struct ContentView: View {
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 50) {
                         ForEach(people.items.sorted()) { person in
-                            NavigationLink(destination: person.image.resizable().scaledToFit()) {
+                            NavigationLink(destination: DetailView(person: person)) {
                                 VStack {
                                     CircleImageView(image: person.image)
                                         .padding()
